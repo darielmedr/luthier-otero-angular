@@ -1,0 +1,21 @@
+@import '../../../../../styles.scss';
+
+hr {
+    max-width: 50px;
+    border: $mainColor solid 1px;
+}
+
+i {
+    color: $mainColor;
+}
+
+a, p {
+    color: $textFadedColor;
+}
+a:hover {
+    text-decoration-line: underline;
+}
+
+.contact:hover > i {
+    color: black;
+}

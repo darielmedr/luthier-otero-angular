@@ -1,0 +1,29 @@
+<section #home [ngStyle]="{'background-image': 'url(' + homeImageUrl + ')'}" class="view intro-2">
+  <div class="full-bg-img">
+    <div class="mask rgba-grey-light flex-center">
+      <div class="container text-center white-text wow fadeInUp">
+        <h1 class="display-3">Luthier Otero</h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section #about>
+  <app-about></app-about>
+</section>
+
+<section #services>
+  <app-services-description></app-services-description>
+</section>
+
+<section #portfolio>
+  <app-portfolio-gallery [images]="imagesPortfolio"></app-portfolio-gallery>
+</section>
+
+<section #contactInfo>
+  <app-contact-info></app-contact-info>
+</section>
+
+<section #footer>
+  <app-home-footer></app-home-footer>
+</section>

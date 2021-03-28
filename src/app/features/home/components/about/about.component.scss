@@ -1,0 +1,21 @@
+@import '../../../../../styles.scss';
+
+.bg-primary {
+    background-color: $mainColor !important;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 100%);
+}
+
+.white-text p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+hr {
+    max-width: 50px;
+    border: white solid 1px;
+}
+
+@media only screen and (max-width: 768px) {
+    .bg-primary {
+        clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 100%);
+    }
+}

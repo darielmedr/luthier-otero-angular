@@ -1,0 +1,31 @@
+<header class="h-100">
+    <mdb-navbar [ngClass]="{'top-nav-collapse': !isCurrentRouteHome}" SideClass="navbar fixed-top navbar-expand-lg scrolling-navbar navbar-dark intro-fixed-nav"
+        [containerInside]="false">
+        <mdb-navbar-brand>
+            <a class="logo navbar-brand pl-sm-5" routerLink="/">
+                <img [src]="logoUrl" alt="logo">
+                <strong>Lutthier Otero</strong>
+            </a>
+        </mdb-navbar-brand>
+        <links>
+            <ul class="navbar-nav ml-auto pr-sm-5">
+                <li class="nav-item mx-2 waves-light" routerLinkActive="active" *ngFor="let item of menuItems" mdbWavesEffect>
+                    <a class="nav-link" [routerLink]="'/' + item.path">
+                        <span>{{ item.title }}</span>
+                    </a>
+                </li>
+                <li class="nav-item waves-light" routerLinkActive="active">
+                    <a class="nav-link" [routerLink]="'/' + adminItem.path"
+                                        mdbTooltip="Admin only" placement="bottom">
+                        <i [ngClass]="adminItem.icon"></i>
+                    </a>
+                </li>
+            </ul>
+        </links>
+    </mdb-navbar>
+</header>
+<!--Main Navigation-->
+
+<main [ngClass]="{'main-container': !isCurrentRouteHome}">
+    <router-outlet></router-outlet>
+</main>

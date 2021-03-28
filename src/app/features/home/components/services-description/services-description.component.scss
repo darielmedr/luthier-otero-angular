@@ -1,0 +1,27 @@
+@import '../../../../../styles.scss';
+
+.wrapper-blue {
+    background-color: $mainColor !important;
+}
+.wrapper-white {
+    background-color: white !important;
+    clip-path: polygon(0 20%, 50% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+hr {
+    max-width: 50px;
+    border: $mainColor solid 1px;
+}
+
+.service i {
+    color: $mainColor !important;
+}
+.service p {
+    color: $textFadedColor;
+}
+
+@media only screen and (max-width: 768px) {
+    .wrapper-white {
+        clip-path: polygon(0 5%, 50% 0, 100% 0, 100% 100%, 0 100%);
+    }
+}

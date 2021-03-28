@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+
+$mainColor: #70a1ff;
+$navbarColor: #f0eeee;
+$textFadedColor: #6c757d;
+
+.navbar {
+  background-color: transparent;
+}
+
+.top-nav-collapse {
+  background-color: $navbarColor !important;
+}
+.top-nav-collapse .logo strong,
+.top-nav-collapse .nav-link {
+  color: black !important;
+}
+.top-nav-collapse .navbar-toggler-icon {
+  filter: brightness(0);
+}
+
+.top-nav-collapse links ul .active,
+.top-nav-collapse links ul .nav-item:hover {
+  border-bottom: $mainColor solid 5px;
+}
+
+@media only screen and (max-width: 995px) {
+  .navbar {
+    background-color: $navbarColor !important;
+  }
+  .navbar-toggler-icon {
+    filter: brightness(0);
+  }
+  .logo strong,
+  .nav-link {
+    color: black !important;
+  }
+  links ul .active {
+    border: none;
+  }
+}

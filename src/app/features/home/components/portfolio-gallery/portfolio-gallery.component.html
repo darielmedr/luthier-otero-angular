@@ -1,0 +1,10 @@
+<div class="container-fluid my-5">
+    <div class="row no-gutters">
+        <div class="col-lg-4 col-sm-6" *ngFor="let image of album; let imageIndex=index" (click)="open(imageIndex)">
+            <img class="w-100" [src]="image.thumb">
+            <div class="content">
+                <div class="text">{{image.caption}}</div>
+            </div>
+        </div>
+    </div>
+</div>
